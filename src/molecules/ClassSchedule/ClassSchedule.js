@@ -4,7 +4,6 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 const schedule = [
   { day: 'Segunda-feira', classes: [{ time: '07:00', name: 'Yoga' }, { time: '09:00', name: 'Pilates' }, { time: '18:00', name: 'Spinning' }] },
   { day: 'Terça-feira', classes: [{ time: '07:00', name: 'Crossfit' }, { time: '09:00', name: 'Musculação' }, { time: '18:00', name: 'Zumba' }] },
-  // Adicione mais dias e aulas conforme necessário
 ];
 
 const ClassSchedule = () => (

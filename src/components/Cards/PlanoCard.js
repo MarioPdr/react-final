@@ -9,7 +9,7 @@ const PlanoCard = ({ titulo, descricao, preco }) => {
       transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
       "&:hover": {
         transform: "scale(1.05)",
-        backgroundColor: "#e0f7fa", // Adicionando a mudança de cor no fundo
+        backgroundColor: "#e0f7fa",
       }
     }}>
       <CardContent>

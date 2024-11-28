@@ -7,12 +7,12 @@ img {
   width: 100%;
   height: auto;
   padding: 0 10px;
-  margin: 150px auto; /* Aumenta a margem superior */
+  margin: 150px auto; 
   box-sizing: border-box;
 }
 
 .box_banner {
   max-width: 1400px;
   margin: 0 auto;
-  margin-top: 50px; /* Adiciona margem superior à .box_banner */
+  margin-top: 50px; 
 }

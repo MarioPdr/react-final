@@ -1,16 +1,11 @@
-import react, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Cards from "../../components/Cards/Cards";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
 const GridProdutos = () => {
   const [produto, setProduto] = useState([]);
   useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/xfiveco/mock-api-images/main/images.json"
-    )
+    fetch("https://raw.githubusercontent.com/xfiveco/mock-api-images/main/images.json")
       .then((response) => response.json())
       .then((response) => {
         setProduto(response.data);
@@ -21,10 +16,8 @@ const GridProdutos = () => {
   return (
     <>
       {produto.map((produto, index) => (
-        <Grid container spacing={2}>
-          <div>
-            <img src={produto.sizes.xs} key={index} />
-          </div>
+        <Grid item xs={12} sm={6} md={4} key={index}>
+          <Cards image={produto.sizes.xs} description={produto.title} price={"R$ 0,00"} />
         </Grid>
       ))}
     </>
