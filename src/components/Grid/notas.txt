@@ -1,0 +1,16 @@
+const ExampleGrid = ({ data }) => {
+  return (
+    <Grid container spacing={3}>
+      {data.map((item) => (
+        <Grid item xs={12} sm={6} md={4} key={item.id}>
+          {/* Substituímos pelo componente do Mario */}
+          <MarioCard image={item.image} description={item.description}>
+            {/* Incluímos o Slider da Ana Clara */}
+            <Slider images={item.sliderImages} />
+          </MarioCard>
+        </Grid>
+      ))}
+    </Grid>
+  );
+};
+Modelo ideal de como ficará estruturad esse grid após receber ambas as partes que faltam.
