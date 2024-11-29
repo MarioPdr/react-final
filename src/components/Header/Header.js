@@ -13,26 +13,26 @@ const Header = () => {
   };
 
   const drawer = (
-    <Box sx={{ width: 250 }} onClick={handleDrawerToggle}>
+    <Box sx={{ width: 250, backgroundColor: "#000" }} onClick={handleDrawerToggle}>
       <List>
         <ListItem button component="a" href="#inicio">
-          <ListItemText primary="Início" />
+          <ListItemText primary="Início" sx={{ color: "#fff" }} />
         </ListItem>
         <ListItem button component="a" href="#planos">
-          <ListItemText primary="Planos" />
+          <ListItemText primary="Planos" sx={{ color: "#fff" }} />
         </ListItem>
         <ListItem button component="a" href="#sobre-nos">
-          <ListItemText primary="Sobre Nós" />
+          <ListItemText primary="Sobre Nós" sx={{ color: "#fff" }} />
         </ListItem>
         <ListItem button component="a" href="#contato">
-          <ListItemText primary="Contato" />
+          <ListItemText primary="Contato" sx={{ color: "#fff" }} />
         </ListItem>
       </List>
     </Box>
   );
 
   return (
-    <AppBar className="header" sx={headerStyles.appBar}>
+    <AppBar className="header" sx={{ backgroundColor: "#000" }}>
       <Toolbar className="header-top" sx={headerStyles.toolbar}>
         <Box className="logo" sx={headerStyles.logo}>
           <img src={logo} alt="Carioca Logo" />
@@ -43,6 +43,7 @@ const Header = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
+              sx={{ color: "#fff" }}
             >
               <Instagram />
             </IconButton>
@@ -50,23 +51,24 @@ const Header = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
+              sx={{ color: "#fff" }}
             >
               <Facebook />
             </IconButton>
-            <Typography variant="body2">21.9 9995-6202 </Typography>
-            <Typography variant="body2">21.9 9995-3526</Typography>
+            <Typography variant="body2" sx={{ color: "#fff" }}>21.9 9995-6202 </Typography>
+            <Typography variant="body2" sx={{ color: "#fff" }}>21.9 9995-3526</Typography>
           </Box>
           <Box className="nav" sx={headerStyles.nav}>
-            <Button href="#inicio" className="nav-item" sx={headerStyles.navItem}>
+            <Button href="#inicio" className="nav-item" sx={{ ...headerStyles.navItem, color: "#fff" }}>
               Início
             </Button>
-            <Button href="#planos" className="nav-item" sx={headerStyles.navItem}>
+            <Button href="#planos" className="nav-item" sx={{ ...headerStyles.navItem, color: "#fff" }}>
               Planos
             </Button>
-            <Button href="#sobre-nos" className="nav-item" sx={headerStyles.navItem}>
+            <Button href="#sobre-nos" className="nav-item" sx={{ ...headerStyles.navItem, color: "#fff" }}>
               Sobre Nós
             </Button>
-            <Button href="#contato" className="nav-item" sx={headerStyles.navItem}>
+            <Button href="#contato" className="nav-item" sx={{ ...headerStyles.navItem, color: "#fff" }}>
               Contato
             </Button>
           </Box>
@@ -76,7 +78,7 @@ const Header = () => {
           aria-label="open drawer"
           edge="end"
           onClick={handleDrawerToggle}
-          sx={{ display: { md: 'none' } }}
+          sx={{ display: { md: 'none' }, color: "#fff" }}
         >
           <MenuIcon />
         </IconButton>
@@ -90,7 +92,7 @@ const Header = () => {
         }}
         sx={{
           display: { xs: 'block', md: 'none' },
-          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 250 },
+          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 250, backgroundColor: "#000", color: "#fff" },
         }}
       >
         {drawer}
