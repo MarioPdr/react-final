@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, Button, Box } from '@mui/material';
+import { Card, CardContent, Typography } from '@mui/material';
 
 const Cards = ({ image, description, price }) => {
   return (
@@ -12,11 +12,6 @@ const Cards = ({ image, description, price }) => {
         <Typography variant="body1" sx={{ fontSize: '1rem', color: 'gray', marginBottom: '1rem' }}>
           {price}
         </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', flexGrow: 1 }}>
-          <Button variant="contained" color="primary" sx={{ fontSize: '1rem', padding: '10px 20px' }}>
-            Comprar
-          </Button>
-        </Box>
       </CardContent>
     </Card>
   );

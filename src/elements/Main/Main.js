@@ -1,9 +1,9 @@
 import React from "react";
-import Form from "../../components/Form";
 import Planos from "../Planos/Planos";
 import ClassSchedule from "../ClassSchedule/ClassSchedule";
 import NewsSection from "../NewsSection/NewsSection";
 import Loja from "../Shop/Loja";
+import MapaLocalizacao from "../Maps/MapaLocalizacao";
 
 const Main = () => {
   return (
@@ -12,7 +12,7 @@ const Main = () => {
       <ClassSchedule />
       <Planos />
       <Loja />
-      <Form />
+      <MapaLocalizacao />
     </div>
   );
 };
