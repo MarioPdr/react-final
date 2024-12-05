@@ -1,18 +1,56 @@
 h1, p {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
 }
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
-  padding: 0 10px;
-  margin: 150px auto; 
+  width: 90%; 
+  max-height: 600px; 
+  margin: auto;
   box-sizing: border-box;
 }
 
 .box_banner {
   max-width: 1400px;
   margin: 0 auto;
-  margin-top: 50px; 
+  margin-top: 7%; 
+  position: relative; 
+  z-index: 1; 
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.arrow.prev {
+  left: 10px;
+}
+
+.arrow.next {
+  right: 10px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) { 
+  .box_banner {
+    margin-top: 35%; 
+  }
+
+  .arrow {
+    font-size: 20px; 
+    padding: 8px;
+  }
 }

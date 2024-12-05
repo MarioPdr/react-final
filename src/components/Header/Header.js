@@ -35,7 +35,7 @@ const Header = () => {
     <AppBar className="header" sx={{ backgroundColor: "#000" }}>
       <Toolbar className="header-top" sx={headerStyles.toolbar}>
         <Box className="logo" sx={headerStyles.logo}>
-          <img src={logo} alt="Carioca Logo" />
+          <img src={logo} alt="Stormy Gym Logo" />
         </Box>
         <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1 }}>
           <Box className="contacts" sx={headerStyles.contacts}>
@@ -45,7 +45,7 @@ const Header = () => {
               rel="noopener noreferrer"
               sx={{ color: "#fff" }}
             >
-              <Instagram />
+              <Instagram sx={{ color: "#fff" }} />
             </IconButton>
             <IconButton
               href="https://facebook.com"
@@ -53,7 +53,7 @@ const Header = () => {
               rel="noopener noreferrer"
               sx={{ color: "#fff" }}
             >
-              <Facebook />
+              <Facebook sx={{ color: "#fff" }} />
             </IconButton>
             <Typography variant="body2" sx={{ color: "#fff" }}>21.9 9995-6202 </Typography>
             <Typography variant="body2" sx={{ color: "#fff" }}>21.9 9995-3526</Typography>

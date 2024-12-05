@@ -8,14 +8,28 @@ import Imagem3 from "../../assets/imagem3.jpg";
 
 const CarouselContainer = () => {
   return (
-    <div className="box_banner" mt>
+    <div className="box_banner">
       <ResponsiveCarousel
         infiniteLoop={true}
         autoPlay={true}
         showStatus={false}
-        showArrows={false}
+        showArrows={true}
         showThumbs={false}
         interval={5000}
+        renderArrowPrev={(clickHandler, hasPrev) =>
+          hasPrev && (
+            <button className="arrow prev" onClick={clickHandler}>
+              ❮
+            </button>
+          )
+        }
+        renderArrowNext={(clickHandler, hasNext) =>
+          hasNext && (
+            <button className="arrow next" onClick={clickHandler}>
+              ❯
+            </button>
+          )
+        }
       >
         <div>
           <img src={Imagem} alt="Slide 1" />
